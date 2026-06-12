@@ -95,9 +95,9 @@ export default function StoryScreen() {
         }}>
           <div style={{ fontSize: 28, color: '#ED8B00', lineHeight: 1, marginBottom: 8 }}>"</div>
           <p style={{ fontSize: 16, lineHeight: 1.7, color: '#fff', fontStyle: 'italic', margin: 0, marginBottom: 10 }}>
-            Science is everywhere. And it belongs to everyone.
+            John Glenn's legacy has always stood for courage, discovery, and a belief in what's possible. Being recognized in his name is incredibly special to me, and it reinforces just how much the work that COSI does truly matters.
           </p>
-          <div style={{ fontSize: 11, color: '#00B2A9', fontWeight: 700, letterSpacing: 1 }}>— COSI</div>
+          <div style={{ fontSize: 11, color: '#00B2A9', fontWeight: 700, letterSpacing: 1 }}>— Jeffrey W. Edwards</div>
         </div>
 
         {/* John Glenn Inspiration Award Logo */}

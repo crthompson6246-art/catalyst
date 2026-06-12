@@ -1,20 +1,16 @@
 import { useState } from 'react'
 
 const SCHEDULE = [
-  { id: 1, time: '5:00 PM', title: 'Arrive & Gather', detail: 'Social hour in Gallery 1 — welcome drinks & networking', theme: 'Gather', type: 'social' },
-  { id: 2, time: '5:35 PM', title: 'Launch Video', detail: 'Program opens with CATALYST 2026 launch video', theme: 'Opening', type: 'video' },
-  { id: 3, time: '5:37 PM', title: 'Welcome — Kerry Charles', detail: 'Welcome remarks, thank you to sponsors, introduction of Erica Conroy', theme: 'Part 1', type: 'speaker' },
-  { id: 4, time: '5:39 PM', title: 'Erica Conroy', detail: 'The importance of innovation and inspiration · Introduction of John Glenn and video', theme: 'Part 1', type: 'speaker' },
-  { id: 5, time: '5:41 PM', title: 'John Glenn Video', detail: 'Refreshed John Glenn biographical video — his legacy, the kit, and the Award', theme: 'Part 1', type: 'video' },
-  { id: 6, time: '5:45 PM', title: 'Dr. Frederic Bertley', detail: 'John Glenn\'s defining characteristics · How COSI embodies those values through key initiatives', theme: 'Part 2', type: 'speaker' },
-  { id: 7, time: '5:45 PM', title: 'Jade Perrone', detail: 'PLATFORM Valedictorian Speech — a voice from the next generation', theme: 'Part 2', type: 'highlight' },
-  { id: 8, time: '5:45 PM', title: 'Dr. Bertley — Call to Action', detail: 'Connecting COSI\'s mission to tonight\'s giving moment', theme: 'Part 2', type: 'highlight' },
-  { id: 9, time: '5:47 PM', title: 'Kerry Charles — Jeff\'s Introduction', detail: 'Biography of Jeff Edwards · Community leader testimonials · His civic and professional impact', theme: 'Part 3', type: 'speaker' },
-  { id: 10, time: '5:52 PM', title: 'Tribute Remarks Video', detail: 'Video tribute featuring community leaders honoring Jeff Edwards', theme: 'Part 3', type: 'video' },
-  { id: 11, time: '6:02 PM', title: 'Award Presentation', detail: 'Dr. Frederic Bertley presents the John Glenn Inspiration Award · Erica Conroy holds the certificate', theme: 'Part 3', type: 'highlight' },
-  { id: 12, time: '6:04 PM', title: 'Live Interview — Jeff Edwards', detail: 'An intimate fireside conversation with Jeff Edwards & Dr. Bertley — his story, his vision, his gratitude (~12 min)', theme: 'Part 3', type: 'highlight' },
-  { id: 13, time: '6:16 PM', title: 'Kerry Charles — Send Off', detail: 'Thank you and farewell remarks', theme: 'Part 3', type: 'speaker' },
-  { id: 14, time: '6:17 PM', title: 'Reception — Atrium', detail: 'Program concludes · Guests move to Atrium · Photos with Honoree and Laureates', theme: 'Reception', type: 'social' },
+  { id: 1, time: '5:00 PM', title: 'Arrive & Gather', detail: 'Welcome drinks & networking in Gallery 1', theme: 'Gather', type: 'social' },
+  { id: 2, time: '5:35 PM', title: 'Welcome', detail: 'Kerry Charles, NBC 4', theme: 'Program', type: 'speaker' },
+  { id: 3, time: '5:40 PM', title: 'Erica Conroy', detail: 'COSI Board President', theme: 'Program', type: 'speaker' },
+  { id: 4, time: '5:45 PM', title: 'John Glenn Video', detail: 'John Glenn biographical video — his legacy and the Award', theme: 'Program', type: 'video' },
+  { id: 5, time: '5:50 PM', title: 'Dr. Frederic Bertley', detail: 'COSI CEO & President', theme: 'Program', type: 'speaker' },
+  { id: 6, time: '5:55 PM', title: 'Jade Perron', detail: 'Valedictorian, The Platform Class of 2026', theme: 'Program', type: 'highlight' },
+  { id: 7, time: '6:00 PM', title: 'Tribute Video', detail: 'Video tribute honoring Jeff Edwards', theme: 'Program', type: 'video' },
+  { id: 8, time: '6:05 PM', title: 'Award Presentation & Fireside Chat', detail: 'John Glenn Inspiration Award presentation followed by a conversation with Jeff Edwards', theme: 'Program', type: 'highlight' },
+  { id: 9, time: '6:15 PM', title: 'Closing', detail: '', theme: 'Program', type: 'speaker' },
+  { id: 10, time: '6:20 PM', title: 'Reception — Atrium', detail: 'Program concludes · Guests move to the Atrium', theme: 'Reception', type: 'social' },
 ]
 
 const TYPE_DOT = {
