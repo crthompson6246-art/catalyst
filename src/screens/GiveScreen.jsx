@@ -117,12 +117,16 @@ export default function GiveScreen() {
         ))}
       </div>
 
-      {/* Video placeholder */}
+      {/* Recap Video */}
       <div style={{ margin: '8px 20px 40px' }}>
-        <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, padding: '28px 20px', textAlign: 'center' }}>
-          <div style={{ width: 52, height: 52, borderRadius: '50%', background: 'rgba(237,139,0,0.15)', border: '2px solid #ED8B00', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 10px', fontSize: 20 }}>▶</div>
-          <div style={{ color: '#fff', fontWeight: 700, fontSize: 15, marginBottom: 4 }}>Impact Stories</div>
-          <div style={{ color: '#CFCDC9', fontSize: 12 }}>Video plays during the program</div>
+        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: 2, color: '#ED8B00', marginBottom: 10 }}>CATALYST 2025 RECAP</div>
+        <div style={{ borderRadius: 12, overflow: 'hidden', background: '#000', position: 'relative', paddingTop: '56.25%' }}>
+          <video
+            src="https://cosi.org/MOBILEAPP/catalyst/img/2026/Catalyst2025EventRecapSlideshow.mp4"
+            controls
+            playsInline
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+          />
         </div>
       </div>
 
