@@ -9,8 +9,8 @@ import FollowUpScreen from './screens/FollowUpScreen.jsx'
 function App() {
   return (
     <HashRouter>
-      <div className="app">
-        <div className="screen-content">
+      <div className="app-container">
+        <div className="screen">
           <Routes>
             <Route path="/" element={<HomeScreen />} />
             <Route path="/story" element={<StoryScreen />} />

@@ -28,21 +28,24 @@ body {
 }
 
 #root {
+  display: flex;
+  justify-content: center;
+  background: var(--navy);
+}
+
+.app-container {
   max-width: 430px;
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  position: relative;
   background: var(--navy);
+  position: relative;
   overflow-x: hidden;
-}
-
-.app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
-.screen-content {
+.screen {
   flex: 1;
   overflow-y: auto;
   padding-bottom: 80px;
