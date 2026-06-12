@@ -1,0 +1,16 @@
+{
+  "name": "CATALYST 2026",
+  "short_name": "CATALYST",
+  "description": "COSI CATALYST Gala Event App",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#002554",
+  "background_color": "#002554",
+  "icons": [
+    {
+      "src": "vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
