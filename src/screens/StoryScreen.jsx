@@ -1,93 +1,3 @@
-import { useEffect, useRef } from 'react'
-
-function OrbitalAnimation() {
-  return (
-    <div style={{ position: 'relative', width: 120, height: 120, margin: '0 auto 24px' }}>
-      <style>{`
-        @keyframes orbit1 {
-          from { transform: rotate(0deg) translateX(45px) rotate(0deg); }
-          to { transform: rotate(360deg) translateX(45px) rotate(-360deg); }
-        }
-        @keyframes orbit2 {
-          from { transform: rotate(120deg) translateX(35px) rotate(-120deg); }
-          to { transform: rotate(480deg) translateX(35px) rotate(-480deg); }
-        }
-        @keyframes orbit3 {
-          from { transform: rotate(240deg) translateX(55px) rotate(-240deg); }
-          to { transform: rotate(600deg) translateX(55px) rotate(-600deg); }
-        }
-        @keyframes pulse-core {
-          0%, 100% { transform: scale(1); opacity: 1; }
-          50% { transform: scale(1.1); opacity: 0.8; }
-        }
-      `}</style>
-
-      {/* Orbital rings */}
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        borderRadius: '50%',
-        border: '1px solid rgba(237,139,0,0.25)',
-        top: '50%', left: '50%',
-        width: 90, height: 90,
-        transform: 'translate(-50%, -50%)',
-      }} />
-      <div style={{
-        position: 'absolute',
-        top: '50%', left: '50%',
-        width: 70, height: 70,
-        borderRadius: '50%',
-        border: '1px solid rgba(0,178,169,0.2)',
-        transform: 'translate(-50%, -50%)',
-      }} />
-
-      {/* Center core */}
-      <div style={{
-        position: 'absolute',
-        top: '50%', left: '50%',
-        width: 24, height: 24,
-        borderRadius: '50%',
-        background: 'radial-gradient(circle, #ED8B00, #ff9d00)',
-        transform: 'translate(-50%, -50%)',
-        boxShadow: '0 0 16px rgba(237,139,0,0.8)',
-        animation: 'pulse-core 2s ease-in-out infinite',
-      }} />
-
-      {/* Orbiting dots */}
-      <div style={{
-        position: 'absolute',
-        top: '50%', left: '50%',
-        width: 8, height: 8,
-        borderRadius: '50%',
-        background: '#ED8B00',
-        marginTop: -4, marginLeft: -4,
-        animation: 'orbit1 3s linear infinite',
-        boxShadow: '0 0 8px rgba(237,139,0,0.6)',
-      }} />
-      <div style={{
-        position: 'absolute',
-        top: '50%', left: '50%',
-        width: 6, height: 6,
-        borderRadius: '50%',
-        background: '#00B2A9',
-        marginTop: -3, marginLeft: -3,
-        animation: 'orbit2 4s linear infinite',
-        boxShadow: '0 0 6px rgba(0,178,169,0.6)',
-      }} />
-      <div style={{
-        position: 'absolute',
-        top: '50%', left: '50%',
-        width: 5, height: 5,
-        borderRadius: '50%',
-        background: '#FFFFFF',
-        marginTop: -2.5, marginLeft: -2.5,
-        animation: 'orbit3 5s linear infinite',
-        opacity: 0.7,
-      }} />
-    </div>
-  )
-}
-
 function Section({ label, title, children }) {
   return (
     <div style={{
@@ -110,69 +20,48 @@ export default function StoryScreen() {
       {/* Hero Header */}
       <div style={{
         background: 'linear-gradient(180deg, #001a3a 0%, #002554 100%)',
-        padding: '40px 24px 32px',
+        padding: '48px 24px 36px',
         textAlign: 'center',
         borderBottom: '1px solid rgba(237,139,0,0.2)',
       }}>
-        <OrbitalAnimation />
-        <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: 4, color: '#CFCDC9', textTransform: 'uppercase', marginBottom: 8 }}>2026 Honoree</div>
-        <div style={{ fontSize: 28, fontWeight: 700, letterSpacing: 4, color: '#FFFFFF', fontVariant: 'small-caps', marginBottom: 6 }}>Jeff Edwards</div>
-        <div style={{ fontSize: 14, color: '#00B2A9', fontWeight: 600, letterSpacing: 0.5 }}>John Glenn Inspiration Award</div>
+        <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: 4, color: '#CFCDC9', textTransform: 'uppercase', marginBottom: 12 }}>2026 Honoree</div>
+        <div style={{ fontSize: 36, fontWeight: 800, letterSpacing: 6, color: '#FFFFFF', textTransform: 'uppercase', marginBottom: 10 }}>JEFF EDWARDS</div>
+        <div style={{ height: 2, background: 'linear-gradient(90deg, transparent, #ED8B00, transparent)', margin: '0 40px 16px' }} />
+        <div style={{ fontSize: 14, color: '#00B2A9', fontWeight: 600, letterSpacing: 0.5 }}>2026 John Glenn Inspiration Award</div>
       </div>
 
       <div style={{ padding: '24px 20px 32px' }}>
 
-        <Section label="A Builder From Columbus" title="From Columbus, For Columbus">
+        <Section label="A Builder From Columbus">
           <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
-            Jeff Edwards grew up believing that the right foundation changes everything. As a Columbus native, he watched his city grow — and committed his life to making sure that growth reached everyone.
-          </p>
-          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
-            Over 30+ years, he transformed a family business into <strong style={{ color: '#FFFFFF' }}>Installed Building Products (IBP)</strong>, one of the nation's largest installation services companies, headquartered right here in Columbus.
-          </p>
-          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)' }}>
-            But Jeff's greatest investment has never been in buildings. It's been in <em style={{ color: '#ED8B00' }}>people</em>.
+            Jeff Edwards grew up believing that the right foundation changes everything. Over 30+ years, he transformed a family business into <strong style={{ color: '#FFFFFF' }}>Installed Building Products (IBP)</strong>, one of America's leading construction companies — not by luck, but by understanding that great structures require both precision and purpose.
           </p>
         </Section>
 
         <div className="orange-divider" />
 
-        <Section label="Building More Than Buildings" title="Community Leadership">
-          <p style={{ fontSize: 14, lineHeight: 1.7, color: 'rgba(255,255,255,0.85)', marginBottom: 16 }}>
-            Jeff's community leadership spans institutions that define Columbus:
+        <Section label="Building More Than Buildings">
+          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 16 }}>
+            Jeff never stopped at the balance sheet. He joined <strong style={{ color: '#FFFFFF' }}>The Columbus Partnership</strong>, shaping the city's economic future. He guided grants through <strong style={{ color: '#FFFFFF' }}>The Columbus Foundation</strong>. He served the arts through the <strong style={{ color: '#FFFFFF' }}>Columbus Museum of Art</strong>. He fought for at-risk youth through the <strong style={{ color: '#FFFFFF' }}>Salvation Army</strong> and <strong style={{ color: '#FFFFFF' }}>Huckleberry House</strong>.
           </p>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {[
-              { org: 'Columbus Partnership', desc: 'Helping drive economic growth citywide' },
-              { org: 'Columbus Foundation', desc: 'Supporting nonprofits across Central Ohio' },
-              { org: 'Columbus Museum of Art', desc: 'Making art accessible to all' },
-              { org: 'Salvation Army', desc: 'Serving families in crisis' },
-              { org: 'Huckleberry House', desc: 'Providing shelter for runaway youth' },
-            ].map(item => (
-              <div key={item.org} style={{
-                display: 'flex',
-                gap: 12,
-                padding: '10px 14px',
-                background: 'rgba(237,139,0,0.08)',
-                borderRadius: 8,
-                borderLeft: '3px solid #ED8B00',
-              }}>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, color: '#FFFFFF' }}>{item.org}</div>
-                  <div style={{ fontSize: 12, color: '#CFCDC9', marginTop: 2 }}>{item.desc}</div>
-                </div>
-              </div>
-            ))}
-          </div>
         </Section>
 
         <div className="orange-divider" />
 
-        <Section label="A Voice for the Future" title="National Impact">
+        <Section label="A Voice for the Future">
           <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
-            At Harvard's Joint Center for Housing Studies, Jeff brings a builder's perspective to national conversations on affordable housing.
+            At <strong style={{ color: '#FFFFFF' }}>Harvard's Joint Center for Housing Studies</strong>, Jeff bridges the gap between the construction industry and national housing policy — advocating for affordable, energy-efficient homes that give every family a foundation worth standing on.
+          </p>
+        </Section>
+
+        <div className="orange-divider" />
+
+        <Section label="Why Jeff, Why Now">
+          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
+            The John Glenn Inspiration Award honors those who embody the belief that one person's vision can lift an entire community. Jeff Edwards has spent his career proving that science, industry, and humanity belong together.
           </p>
           <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)' }}>
-            He doesn't just write checks — he testifies before Congress, advocates for policy change, and shows up wherever he can make a difference.
+            That's why COSI honors him tonight.
           </p>
         </Section>
 
@@ -182,31 +71,17 @@ export default function StoryScreen() {
         <div style={{
           padding: '28px 24px',
           margin: '8px 0 16px',
-          background: 'rgba(237,139,0,0.06)',
+          background: '#002554',
           borderRadius: 16,
           border: '1px solid rgba(237,139,0,0.2)',
-          textAlign: 'center',
+          borderLeft: '4px solid #ED8B00',
         }}>
-          <div style={{ fontSize: 48, lineHeight: 0.5, color: '#ED8B00', marginBottom: 12, fontFamily: 'Georgia, serif' }}>"</div>
-          <div style={{ fontSize: 18, fontStyle: 'italic', color: '#FFFFFF', lineHeight: 1.6, fontWeight: 400, marginBottom: 16 }}>
+          <div style={{ fontSize: 48, lineHeight: 0.5, color: '#ED8B00', marginBottom: 16, fontFamily: 'Georgia, serif' }}>"</div>
+          <div style={{ fontSize: 20, fontStyle: 'italic', color: '#FFFFFF', lineHeight: 1.6, fontWeight: 400, marginBottom: 16 }}>
             Science is everywhere. And it belongs to everyone.
           </div>
-          <div style={{ fontSize: 48, lineHeight: 0.5, color: '#ED8B00', marginTop: 4, fontFamily: 'Georgia, serif', transform: 'rotate(180deg)', display: 'inline-block' }}>"</div>
+          <div style={{ fontSize: 13, color: '#CFCDC9', fontWeight: 600 }}>— Jeff Edwards</div>
         </div>
-
-        <div className="orange-divider" />
-
-        <Section label="Why Jeff, Why Now" title="The Spirit of CATALYST">
-          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
-            COSI's John Glenn Inspiration Award celebrates individuals who embody the spirit of exploration — not just of space or science, but of <em style={{ color: '#00B2A9' }}>human potential</em>.
-          </p>
-          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
-            Jeff Edwards has spent a lifetime asking: how do we build something better? For his family, his company, his city, and the nation.
-          </p>
-          <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.85)' }}>
-            That question — <em style={{ color: '#ED8B00' }}>curious, generous, restless</em> — is exactly what COSI is all about.
-          </p>
-        </Section>
 
       </div>
     </div>
