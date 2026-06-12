@@ -104,7 +104,7 @@ export default function StoryScreen() {
         <div style={{ textAlign: 'center', margin: '24px 0 16px', padding: '20px', background: 'rgba(0,0,0,0.2)', borderRadius: 12 }}>
           <div style={{ fontSize: 10, fontWeight: 700, color: '#CFCDC9', letterSpacing: 2, marginBottom: 12 }}>PRESENTED BY</div>
           <ImgWithFallback
-            src="/catalyst/images/john-glenn-award-logo.png"
+            src="/catalyst/images/john-glenn-award-logo.jpg"
             alt="COSI's John Glenn Inspiration Award"
             style={{ width: 140, height: 140, objectFit: 'contain' }}
             fallback={
