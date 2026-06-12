@@ -95,7 +95,7 @@ export default function FollowUpScreen() {
           {/* Jeff Card */}
           <div className="card" style={{ borderColor: 'rgba(237,139,0,0.3)', textAlign: 'center', padding: '20px', marginBottom: 16 }}>
             <ImgWithFallback
-              src="/catalyst/images/jeff-edwards.jpg"
+              src="/catalyst/images/jeff edwards.jpg"
               alt="Jeffrey W. Edwards"
               style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', border: '3px solid #ED8B00', margin: '0 auto 12px', display: 'block' }}
               fallback={

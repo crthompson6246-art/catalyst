@@ -13,7 +13,7 @@ function CatalystLogo({ size = 'large' }) {
   return (
     <div style={{ textAlign: 'center', marginBottom: isLarge ? 8 : 0 }}>
       <ImgWithFallback
-        src="/catalyst/images/catalyst-logo-navy.png"
+        src="/catalyst/images/Catalyst_logo_NAVY.png"
         alt="Catalyst — COSI's Celebration of Inspiration"
         style={{ width: isLarge ? 260 : 180, maxWidth: '80%' }}
         fallback={
@@ -168,7 +168,7 @@ export default function HomeScreen() {
       <div style={{ padding: '0 20px 40px' }}>
         <div className="card" style={{ borderColor: 'rgba(237,139,0,0.3)', background: 'rgba(237,139,0,0.06)', display: 'flex', alignItems: 'center', gap: 14 }}>
           <ImgWithFallback
-            src="/catalyst/images/jeff-edwards.jpg"
+            src="/catalyst/images/jeff edwards.jpg"
             alt="Jeff Edwards"
             style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', objectPosition: 'top', border: '2px solid #ED8B00', flexShrink: 0 }}
             fallback={

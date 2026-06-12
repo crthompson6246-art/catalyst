@@ -26,7 +26,7 @@ export default function StoryScreen() {
       {/* Jeff Edwards Photo — TOP */}
       <div style={{ position: 'relative', height: 320, overflow: 'hidden', background: '#001a3a' }}>
         <ImgWithFallback
-          src="/catalyst/images/jeff-edwards.jpg"
+          src="/catalyst/images/jeff edwards.jpg"
           alt="Jeffrey W. Edwards"
           style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
           fallback={
