@@ -51,7 +51,7 @@ export default function GiveScreen() {
     localStorage.setItem('catalystDonated', 'true')
     setDonated(true)
     setShowModal(false)
-    window.open('https://givebutter.com', '_blank')
+    window.open('https://secure.qgiv.com/for/jg4', '_blank')
   }
 
   return (
