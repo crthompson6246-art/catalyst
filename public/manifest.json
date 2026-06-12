@@ -1,0 +1,13 @@
+{
+  "name": "CATALYST 2026",
+  "short_name": "CATALYST",
+  "description": "COSI John Glenn Inspiration Award Gala",
+  "theme_color": "#002554",
+  "background_color": "#002554",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
