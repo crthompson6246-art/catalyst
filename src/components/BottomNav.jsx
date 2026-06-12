@@ -49,6 +49,17 @@ const tabs = [
       </svg>
     ),
   },
+  {
+    label: 'Trivia',
+    path: '/trivia',
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" fill="none"/>
+        <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-3 2.5-3 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <circle cx="12" cy="18" r="0.5" fill="currentColor" stroke="currentColor" strokeWidth="1.5"/>
+      </svg>
+    ),
+  },
 ]
 
 export default function BottomNav() {
@@ -83,7 +94,7 @@ export default function BottomNav() {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              width: '20%',
+              width: '16.66%',
               padding: '8px 0',
               background: 'none',
               border: 'none',

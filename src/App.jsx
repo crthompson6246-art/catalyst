@@ -5,6 +5,7 @@ import StoryScreen from './screens/StoryScreen.jsx'
 import EveningScreen from './screens/EveningScreen.jsx'
 import GiveScreen from './screens/GiveScreen.jsx'
 import FollowUpScreen from './screens/FollowUpScreen.jsx'
+import TriviaScreen from './screens/TriviaScreen.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/evening" element={<EveningScreen />} />
             <Route path="/give" element={<GiveScreen />} />
             <Route path="/followup" element={<FollowUpScreen />} />
+            <Route path="/trivia" element={<TriviaScreen />} />
           </Routes>
         </div>
         <BottomNav />
